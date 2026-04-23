@@ -9,6 +9,10 @@
 }
 
 /* ================= RESET ================= */
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -30,7 +34,7 @@ body {
 /* LOGO */
 .logo h1{
   margin:0;
-  font-size:24px;
+  font-size:22px;
   letter-spacing:2px;
 }
 
@@ -79,6 +83,10 @@ body {
   display:block;
 }
 
+.menu ul li:hover{
+  background:#374151;
+}
+
 /* ================= PANTALLAS ================= */
 .page{
   display:none;
@@ -98,12 +106,12 @@ body {
 }
 
 .hero h1{
-  font-size:36px;
+  font-size:34px;
   margin-bottom:10px;
 }
 
 .hero h2{
-  font-size:20px;
+  font-size:18px;
   color:#cbd5e1;
   margin-bottom:20px;
 }
@@ -138,7 +146,7 @@ button:hover{
 
 .card{
   flex:1;
-  min-width:200px;
+  min-width:220px;
   background:var(--white);
   padding:20px;
   border-radius:8px;
@@ -199,6 +207,41 @@ button:hover{
   background:var(--light-bg);
 }
 
+/* ================= SUBMENÚ GRID ================= */
+.subgrid{
+  display:flex;
+  gap:20px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.subitem{
+  flex:1;
+  min-width:220px;
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  border:1px solid #e5e7eb;
+  transition:0.3s;
+}
+
+.subitem:hover{
+  transform:translateY(-3px);
+}
+
+.subitem h3{
+  margin-top:0;
+}
+
+.subitem ul{
+  padding-left:18px;
+  margin:10px 0 0 0;
+}
+
+.subitem p{
+  color:var(--gray);
+}
+
 /* ================= WHATSAPP ================= */
 .whatsapp{
   position: fixed;
@@ -221,31 +264,23 @@ button:hover{
   transform: scale(1.1);
 }
 
-.subgrid{
-  display:flex;
-  gap:20px;
-  margin-top:30px;
-  flex-wrap:wrap;
-}
+/* ================= RESPONSIVE ================= */
+@media (max-width:768px){
 
-.subitem{
-  flex:1;
-  min-width:200px;
-  background:white;
-  padding:20px;
-  border-radius:8px;
-  border:1px solid #e5e7eb;
-}
+  .hero h1{
+    font-size:26px;
+  }
 
-.subitem h3{
-  margin-top:0;
-}
+  .hero h2{
+    font-size:16px;
+  }
 
-.subitem ul{
-  padding-left:18px;
-  margin:10px 0 0 0;
-}
+  .categorias{
+    flex-direction:column;
+  }
 
-.subitem p{
-  color:#6B7280;
+  .subgrid{
+    flex-direction:column;
+  }
+
 }
