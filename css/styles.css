@@ -220,3 +220,32 @@ button:hover{
 .whatsapp:hover{
   transform: scale(1.1);
 }
+
+.subgrid{
+  display:flex;
+  gap:20px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.subitem{
+  flex:1;
+  min-width:200px;
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  border:1px solid #e5e7eb;
+}
+
+.subitem h3{
+  margin-top:0;
+}
+
+.subitem ul{
+  padding-left:18px;
+  margin:10px 0 0 0;
+}
+
+.subitem p{
+  color:#6B7280;
+}
