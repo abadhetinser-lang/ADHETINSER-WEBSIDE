@@ -18,7 +18,7 @@
 
   <div class="logo">
     <h1>ADHETINSER</h1>
-    <p>Tu mejor opción</p>
+    <p>Soluciones industriales de codificación</p>
   </div>
 
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -34,30 +34,33 @@
 
 </header>
 
-<!-- INICIO -->
+<!-- ================= INICIO ================= -->
 <section id="inicio" class="hero page active">
 
   <h1>ADHETINSER</h1>
-  <h1>Consumibles y soporte técnico para mantener tu producción en marcha</h1>
+  <h2>Consumibles y soporte técnico para mantener tu producción en marcha</h2>
   <p>La producción continua empieza con el suministro correcto</p>
-  <button>WHATSAPP</button>
+
+  <button onclick="window.open('https://wa.me/5215569804523','_blank')">
+    WHATSAPP
+  </button>
 
   <!-- TARJETAS -->
   <div class="categorias">
 
-    <div class="card">
-      <h3 onclick="showPage('consumibles')">Consumibles</h3>
-      <p>Tintas, solventes cartuchos...</p>
+    <div class="card" onclick="showPage('consumibles')">
+      <h3>Consumibles</h3>
+      <p>Tintas, solventes, cartuchos...</p>
     </div>
 
-    <div class="card">
-      <h3 onclick="showPage('refacciones')">Refacciones</h3>
+    <div class="card" onclick="showPage('refacciones')">
+      <h3>Refacciones</h3>
       <p>Piezas y componentes de equipo.</p>
     </div>
 
-    <div class="card">
-      <h3 onclick="showPage('servicios')">Servicio</h3>
-      <p>Mantenimiento, diagnostico, instalación.</p>
+    <div class="card" onclick="showPage('servicios')">
+      <h3>Servicios</h3>
+      <p>Mantenimiento, diagnóstico e instalación.</p>
     </div>
 
   </div>
@@ -65,28 +68,30 @@
   <!-- NOSOTROS -->
   <section class="nosotros">
 
-  <h2>Nosotros</h2>
+    <h2>Nosotros</h2>
 
-  <div class="bloque">
-    <h3>¿Quiénes somos?</h3>
-    <p>
-      Somos un equipo enfocado en mantener tu producción en marcha.
-      Suministramos consumibles, refacciones y soporte técnico para equipos de codificación industrial.
-    </p>
-  </div>
+    <div class="bloque">
+      <h3>¿Quiénes somos?</h3>
+      <p>
+        Somos un equipo enfocado en mantener tu producción en marcha.
+        Suministramos consumibles, refacciones y soporte técnico para equipos de codificación industrial.
+      </p>
+    </div>
 
-  <div class="bloque">
-    <h3>¿Cómo trabajamos?</h3>
-    <p>
-      Analizamos el problema, validamos compatibilidad y respondemos con soluciones funcionales.
-      Nuestro objetivo es claro: que tu línea no se detenga.
-    </p>
-  </div>
+    <div class="bloque">
+      <h3>¿Cómo trabajamos?</h3>
+      <p>
+        Analizamos el problema, validamos compatibilidad y respondemos con soluciones funcionales.
+        Nuestro objetivo es claro: que tu línea no se detenga.
+      </p>
+    </div>
+
+  </section>
 
   <!-- CONTACTO -->
   <section class="contacto">
     <h2>Contacto</h2>
-    <p>Correo | Teléfono | WhatsApp</p>
+    <p>Correo | +52 (55)6980 4523 </p>
 
     <p>
       Facebook | Instagram | TikTok | YouTube
@@ -95,24 +100,31 @@
 
 </section>
 
-<!-- CONSUMIBLES -->
+<!-- ================= CONSUMIBLES ================= -->
 <section id="consumibles" class="pagina page">
   <h2>Consumibles</h2>
   <p>Tintas, solventes y materiales industriales.</p>
 </section>
 
-<!-- REFACCIONES -->
+<!-- ================= REFACCIONES ================= -->
 <section id="refacciones" class="pagina page">
   <h2>Refacciones</h2>
   <p>Piezas y componentes para equipos industriales.</p>
 </section>
 
-<!--  SERVICIOS -->
+<!-- ================= SERVICIOS ================= -->
 <section id="servicios" class="pagina page">
   <h2>Servicios</h2>
   <p>Mantenimiento, instalación y soporte técnico.</p>
 </section>
 
+<!-- ================= WHATSAPP FLOTANTE ================= -->
+<a href="https://wa.me/5215569804523?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios"
+   target="_blank"
+   class="whatsapp">
+</a>
+
+<!-- JS -->
 <script>
 function toggleMenu(){
   document.getElementById("menu").classList.toggle("active");
@@ -125,8 +137,6 @@ function showPage(id){
   document.getElementById("menu").classList.remove("active");
 }
 </script>
-  
-<a href="https://wa.me/5215569804523?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios" target="_blank" class="whatsapp"></a>
 
 </body>
 </html>
