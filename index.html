@@ -6,24 +6,14 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <style>
-    html{
-      scroll-behavior:smooth;
-    }
-
-    /* NUEVO SISTEMA DE PANTALLAS */
-    .page{
-      display:none;
-    }
-
-    .page.active{
-      display:block;
-    }
+    .page{ display:none; }
+    .page.active{ display:block; }
   </style>
-
 </head>
+
 <body>
 
-<!-- HEADER / NAV -->
+<!-- HEADER -->
 <header class="header">
 
   <div class="logo">
@@ -37,82 +27,85 @@
     <ul>
       <li><a href="#" onclick="showPage('inicio')">Inicio</a></li>
       <li><a href="#" onclick="showPage('consumibles')">Consumibles</a></li>
+      <li><a href="#" onclick="showPage('refacciones')">Refacciones</a></li>
       <li><a href="#" onclick="showPage('servicios')">Servicios</a></li>
-      <li><a href="#" onclick="showPage('equipos')">Equipos</a></li>
-      <li><a href="#" onclick="showPage('contacto')">Contacto</a></li>
     </ul>
   </nav>
 
 </header>
 
-<!-- INICIO -->
+<!-- 🏠 INICIO -->
 <section id="inicio" class="hero page active">
+
   <h1>Consumibles y soporte técnico para mantener tu producción en marcha</h1>
   <p>La producción continua empieza con el suministro correcto</p>
   <button>WHATSAPP</button>
-</section>
 
-<!-- CONSUMIBLES -->
-<section id="consumibles" class="pagina page">
+  <!-- 🟡 TARJETAS -->
+  <div class="categorias">
 
-  <h2>Consumibles y Refacciones</h2>
-  <p>Tintas, solventes, cartuchos y consumibles para equipos industriales.</p>
-
-  <div class="grid">
-
-    <div class="item">
-      <img src="img/tintas.jpg" alt="Tintas">
-      <h3>Tintas</h3>
+    <div class="card">
+      <h3 onclick="showPage('consumibles')">Consumibles</h3>
+      <p>Tintas y materiales industriales.</p>
     </div>
 
-    <div class="item">
-      <img src="img/solventes.jpg" alt="Solventes">
-      <h3>Solventes</h3>
+    <div class="card">
+      <h3 onclick="showPage('refacciones')">Refacciones</h3>
+      <p>Piezas y componentes de equipo.</p>
     </div>
 
-    <div class="item">
-      <img src="img/cartuchos.jpg" alt="Cartuchos">
-      <h3>Cartuchos</h3>
+    <div class="card">
+      <h3 onclick="showPage('servicios')">Servicio</h3>
+      <p>Mantenimiento y soporte técnico.</p>
     </div>
 
   </div>
 
+  <!-- 🟢 QUIÉNES SOMOS -->
+  <section class="info">
+    <h2>Quiénes somos</h2>
+    <p>Empresa especializada en soluciones industriales de codificación, consumibles y soporte técnico para producción continua.</p>
+  </section>
+
+  <!-- 🟣 CONTACTO -->
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <p>Correo | Teléfono | WhatsApp</p>
+
+    <p>
+      Facebook | Instagram | TikTok | YouTube
+    </p>
+  </section>
+
 </section>
 
-<!-- SERVICIOS -->
+<!-- 📦 CONSUMIBLES -->
+<section id="consumibles" class="pagina page">
+  <h2>Consumibles</h2>
+  <p>Tintas, solventes y materiales industriales.</p>
+</section>
+
+<!-- 🔧 REFACCIONES -->
+<section id="refacciones" class="pagina page">
+  <h2>Refacciones</h2>
+  <p>Piezas y componentes para equipos industriales.</p>
+</section>
+
+<!-- ⚙️ SERVICIOS -->
 <section id="servicios" class="pagina page">
   <h2>Servicios</h2>
-  <p>Mantenimiento, diagnóstico e instalación de equipos de codificación.</p>
+  <p>Mantenimiento, instalación y soporte técnico.</p>
 </section>
 
-<!-- EQUIPOS -->
-<section id="equipos" class="pagina page">
-  <h2>Equipos</h2>
-  <p>CIJ, TIJ y TTO para impresión industrial.</p>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto" class="contacto page">
-  <h2>Contacto</h2>
-  <p>Teléfono | Correo | WhatsApp</p>
-</section>
-
-<!-- JS -->
 <script>
 function toggleMenu(){
   document.getElementById("menu").classList.toggle("active");
 }
 
 function showPage(id){
-
-  // ocultar todas las páginas
   const pages = document.querySelectorAll(".page");
   pages.forEach(p => p.classList.remove("active"));
-
-  // mostrar la seleccionada
   document.getElementById(id).classList.add("active");
-
-  // cerrar menú móvil
   document.getElementById("menu").classList.remove("active");
 }
 </script>
