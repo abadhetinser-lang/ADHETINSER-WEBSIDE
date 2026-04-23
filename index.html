@@ -93,93 +93,107 @@
 </section>
 
 <!-- ================= CONSUMIBLES ================= -->
-<section id="consumibles" class="pagina page">
+<section id="consumibles" class="pagina page"><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADHETINSER</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <h1>ADHETINSER</h1>
+    <p>Soluciones industriales</p>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="menu" class="menu">
+    <ul>
+      <li><a onclick="showPage('inicio')">Inicio</a></li>
+      <li><a onclick="showPage('consumibles')">Consumibles</a></li>
+      <li><a onclick="showPage('refacciones')">Refacciones</a></li>
+      <li><a onclick="showPage('equipos')">Equipos</a></li>
+      <li><a onclick="showPage('servicios')">Servicios</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- INICIO -->
+<section id="inicio" class="page active hero">
+
+  <h1>ADHETINSER</h1>
+  <p>Consumibles y soporte técnico para mantener tu producción en marcha</p>
+
+  <!-- TARJETAS -->
+  <div class="categorias">
+
+    <div class="card" onclick="showPage('consumibles')">
+      <h3>Consumibles</h3>
+      <p>Tintas | Solventes | Cartuchos</p>
+    </div>
+
+    <div class="card" onclick="showPage('refacciones')">
+      <h3>Refacciones</h3>
+      <p>Tarjetas | Partes | Componentes</p>
+    </div>
+
+    <div class="card" onclick="showPage('equipos')">
+      <h3>Equipos</h3>
+      <p>TIJ | CIJ | TTO</p>
+    </div>
+
+    <div class="card" onclick="showPage('servicios')">
+      <h3>Servicios</h3>
+      <p>Mantenimiento | Diagnóstico | Instalación</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SUBPÁGINAS -->
+<section id="consumibles" class="page">
   <h2>Consumibles</h2>
-  <p>El suministro confiable de consumibles garantiza la continuidad de tu operación.</p>
-
-  <div class="subgrid">
-
-    <div class="subitem">
-      <h3>Tintas</h3>
-    </div>
-
-    <div class="subitem">
-      <h3>Solventes</h3>
-    </div>
-
-    <div class="subitem">
-      <h3>Cartuchos</h3>
-    </div>
-
-  </div>
-
+  <p>Tintas, solventes y cartuchos para operación continua.</p>
 </section>
 
-<!-- ================= EQUIPOS ================= -->
-<section id="refacciones" class="pagina page">
+<section id="refacciones" class="page">
+  <h2>Refacciones</h2>
+  <p>Componentes y partes para equipos industriales.</p>
+</section>
 
+<section id="equipos" class="page">
   <h2>Equipos</h2>
-  <p>Tecnologías de codificación industrial adaptadas a diferentes procesos productivos.</p>
-
-  <div class="subgrid">
-
-    <div class="subitem">
-      <h3>TIJ</h3>
-      <p>Impresión térmica por inyección de tinta.</p>
-    </div>
-
-    <div class="subitem">
-      <h3>CIJ</h3>
-      <p>Impresión continua de tinta para alta velocidad.</p>
-    </div>
-
-    <div class="subitem">
-      <h3>TTO</h3>
-      <p>Transferencia térmica para empaque flexible.</p>
-    </div>
-
-  </div>
-
+  <p>TIJ, CIJ y TTO para codificación industrial.</p>
 </section>
 
-<!-- ================= SERVICIOS ================= -->
-<section id="servicios" class="pagina page">
-
+<section id="servicios" class="page">
   <h2>Servicios</h2>
-  <p>No solo corregimos fallas, también prevenimos que vuelvan a ocurrir.</p>
-
-  <div class="subgrid">
-
-    <div class="subitem">
-      <h3>Mantenimiento</h3>
-      <ul>
-        <li>Reparativo</li>
-        <li>Preventivo</li>
-      </ul>
-    </div>
-
-    <div class="subitem">
-      <h3>Diagnóstico</h3>
-      <p>Evaluación técnica para detección de fallas.</p>
-    </div>
-
-    <div class="subitem">
-      <h3>Instalación</h3>
-      <p>Configuración e integración de equipos.</p>
-    </div>
-
-  </div>
-
+  <p>Mantenimiento, diagnóstico e instalación.</p>
 </section>
 
-<!-- ================= WHATSAPP ================= -->
-<a href="https://wa.me/5215569804523?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios"
+<!-- CONTACTO ANCLADO -->
+<footer class="footer">
+
+  <h2>Contáctanos</h2>
+  <p>+52 55 6980 4523</p>
+
+  <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+
+</footer>
+
+<!-- WHATSAPP MENÚ -->
+<a href="https://wa.me/5215569804523?text=Hola%2C%20quiero%20informaci%C3%B3n%3A%0A1.%20Consumibles%0A2.%20Refacciones%0A3.%20Equipos%0A4.%20Servicios"
    target="_blank"
    class="whatsapp">
 </a>
 
-<!-- JS -->
 <script>
 function toggleMenu(){
   document.getElementById("menu").classList.toggle("active");
@@ -189,7 +203,7 @@ function showPage(id){
   const pages = document.querySelectorAll(".page");
   pages.forEach(p => p.classList.remove("active"));
   document.getElementById(id).classList.add("active");
-  document.getElementById("menu").classList.remove("active");
+  window.scrollTo(0,0);
 }
 </script>
 
