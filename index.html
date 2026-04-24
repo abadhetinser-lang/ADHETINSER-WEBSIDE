@@ -2,101 +2,6 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>ADHETINSER</title>
-  <link rel="stylesheet" href="css/styles.css">
-
-  <style>
-    .page{ display:none; }
-    .page.active{ display:block; }
-  </style>
-</head>
-
-<body>
-
-<!-- HEADER -->
-<header class="header">
-
-  <div class="logo">
-    <h1>ADHETINSER</h1>
-    <p>Soluciones industriales de codificación</p>
-  </div>
-
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-  <nav id="menu" class="menu">
-    <ul>
-      <li><a href="#" onclick="showPage('inicio')">Inicio</a></li>
-      <li><a href="#" onclick="showPage('consumibles')">Consumibles</a></li>
-      <li><a href="#" onclick="showPage('refacciones')">Equipos</a></li>
-      <li><a href="#" onclick="showPage('servicios')">Servicios</a></li>
-    </ul>
-  </nav>
-
-</header>
-
-<!-- ================= INICIO ================= -->
-<section id="inicio" class="hero page active">
-
-  <h1>ADHETINSER</h1>
-  <h2>Consumibles y soporte técnico para mantener tu producción en marcha</h2>
-  <p>La producción continua empieza con el suministro correcto.</p>
-
-  <div class="categorias">
-
-    <div class="card" onclick="showPage('consumibles')">
-      <h3>Consumibles</h3>
-       <h1>Consumibles</h1>
-      <p>Tintas, solventes y mas.</p>
-    </div>
-
-    <div class="card" onclick="showPage('refacciones')">
-      <h3>Equipos</h3>
-       <h1>Equipos</h1>
-      <p>Tecnologías de codificación industrial.</p>
-    </div>
-
-    <div class="card" onclick="showPage('servicios')">
-      <h3>Servicios</h3>
-      <p>Mantenimiento, diagnóstico e instalación.</p>
-    </div>
-
-  </div>
-
-  <!-- NOSOTROS -->
-  <section class="nosotros">
-    <h2>Nosotros</h2>
-
-    <div class="bloque">
-      <h3>¿Quiénes somos?</h3>
-      <p>
-        Somos un equipo enfocado en mantener tu producción en marcha.
-        Suministramos consumibles, refacciones y soporte técnico para equipos de codificación industrial.
-      </p>
-    </div>
-
-    <div class="bloque">
-      <h3>¿Cómo trabajamos?</h3>
-      <p>
-        Analizamos el problema, validamos compatibilidad y respondemos con soluciones funcionales.
-        Nuestro objetivo es claro: que tu línea no se detenga.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="contacto">
-    <h2>Contacto</h2>
-    <p>Correo | +52 (55) 6980 4523</p>
-    <p>Facebook | Instagram | TikTok | YouTube</p>
-  </section>
-
-</section>
-
-<!-- ================= CONSUMIBLES ================= -->
-<section id="consumibles" class="pagina page"><!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADHETINSER</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -104,11 +9,12 @@
 
 <body>
 
-<!-- HEADER -->
+<!-- HEADER FIJO -->
 <header class="header">
+
   <div class="logo">
     <h1>ADHETINSER</h1>
-    <p>Soluciones industriales</p>
+    <p>Your best option</p>
   </div>
 
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -122,13 +28,14 @@
       <li><a onclick="showPage('servicios')">Servicios</a></li>
     </ul>
   </nav>
+
 </header>
 
-<!-- INICIO -->
+<!-- ================= INICIO ================= -->
 <section id="inicio" class="page active hero">
 
-  <h1>ADHETINSER</h1>
-  <p>Consumibles y soporte técnico para mantener tu producción en marcha</p>
+  <h1>Consumibles y soporte técnico</h1>
+  <p>La producción continua empieza con el suministro correcto</p>
 
   <!-- TARJETAS -->
   <div class="categorias">
@@ -155,44 +62,101 @@
 
   </div>
 
+  <!-- NOSOTROS -->
+  <section class="nosotros">
+    <h2>Nosotros</h2>
+
+    <div class="bloque">
+      <h3>¿Quiénes somos?</h3>
+      <p>Somos un equipo enfocado en mantener tu producción en marcha. Suministramos consumibles, refacciones y soporte técnico.</p>
+    </div>
+
+    <div class="bloque">
+      <h3>¿Cómo trabajamos?</h3>
+      <p>Analizamos el problema, validamos compatibilidad y respondemos con soluciones funcionales. Nuestro objetivo es claro: que tu línea no se detenga.</p>
+    </div>
+  </section>
+
 </section>
 
-<!-- SUBPÁGINAS -->
-<section id="consumibles" class="page">
+<!-- ================= CONSUMIBLES ================= -->
+<section id="consumibles" class="page pagina">
   <h2>Consumibles</h2>
-  <p>Tintas, solventes y cartuchos para operación continua.</p>
+  <p><strong>El suministro confiable garantiza continuidad operativa.</strong></p>
+
+  <p>Ofrecemos materiales diseñados para mantener estabilidad en procesos de impresión industrial.</p>
+
+  <ul>
+    <li>Tintas</li>
+    <li>Solventes</li>
+    <li>Cartuchos</li>
+  </ul>
 </section>
 
-<section id="refacciones" class="page">
+<!-- ================= REFACCIONES ================= -->
+<section id="refacciones" class="page pagina">
   <h2>Refacciones</h2>
-  <p>Componentes y partes para equipos industriales.</p>
+  <p><strong>Componentes que extienden la vida útil de tus equipos.</strong></p>
+
+  <p>Suministro de piezas compatibles para mantener funcionamiento continuo.</p>
+
+  <ul>
+    <li>Tarjetas de horas y electrónicas</li>
+    <li>Tornilleria.</li>
+    <li>Filtros</li>
+  </ul>
 </section>
 
-<section id="equipos" class="page">
+<!-- ================= EQUIPOS ================= -->
+<section id="equipos" class="page pagina">
   <h2>Equipos</h2>
-  <p>TIJ, CIJ y TTO para codificación industrial.</p>
+  <p><strong>Tecnología adaptada a tu proceso productivo.</strong></p>
+
+  <p>Equipos de codificación industrial para diferentes aplicaciones.</p>
+
+  <ul>
+    <li>TIJ</li>
+    <li>CIJ</li>
+    <li>TTO</li>
+  </ul>
 </section>
 
-<section id="servicios" class="page">
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios" class="page pagina">
   <h2>Servicios</h2>
-  <p>Mantenimiento, diagnóstico e instalación.</p>
+  <p><strong>No solo corregimos fallas, prevenimos que ocurran.</strong></p>
+
+  <p>Soporte técnico especializado en equipos industriales.</p>
+
+  <ul>
+    <li>Mantenimiento preventivo</li>
+    <li>Mantenimiento correctivo</li>
+    <li>Diagnóstico</li>
+    <li>Instalación</li>
+  </ul>
 </section>
 
-<!-- CONTACTO ANCLADO -->
+<!-- ================= FOOTER FIJO ================= -->
 <footer class="footer">
 
-  <h2>Contáctanos</h2>
-  <p>+52 55 6980 4523</p>
+  <h2>CONTACTANOS</h2>
 
-  <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+  <p>📧 comercializadoranordmex@hotmail.com</p>
+  <p>📞 5569804523</p>
+
+  <div class="redes">
+    <a href="https://www.youtube.com/@adhetinser8768" target="_blank">YouTube</a>
+    <a href="https://www.facebook.com/share/18DdE4ByMZ/" target="_blank">Facebook</a>
+  </div>
+
+  <p class="copy">HIDALGO MÉXICO | 2026</p>
 
 </footer>
 
-<!-- WHATSAPP MENÚ -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/5215569804523?text=Hola%2C%20quiero%20informaci%C3%B3n%3A%0A1.%20Consumibles%0A2.%20Refacciones%0A3.%20Equipos%0A4.%20Servicios"
    target="_blank"
-   class="whatsapp">
-</a>
+   class="whatsapp"></a>
 
 <script>
 function toggleMenu(){
