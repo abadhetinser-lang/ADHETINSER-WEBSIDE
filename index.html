@@ -19,7 +19,6 @@
     <ul>
       <li><a onclick="showPage('inicio')">Inicio</a></li>
       <li><a onclick="showPage('consumibles')">Consumibles</a></li>
-      <li><a onclick="showPage('refacciones')">Refacciones</a></li>
       <li><a onclick="showPage('equipos')">Equipos</a></li>
       <li><a onclick="showPage('servicios')">Servicios</a></li>
     </ul>
@@ -58,73 +57,105 @@
 
 <!-- CONSUMIBLES -->
 <section id="consumibles" class="page pagina">
-  <img src="img/consumibles.jpg" class="banner">
   <h2>Consumibles</h2>
-  <ul>
-    <li>Tintas</li>
-    <li>Solventes</li>
-    <li>Cartuchos</li>
-  </ul>
+
+  <div class="grid-productos">
+    <div class="producto">
+      <img src="img/tinta.jpg">
+      <h4>Tintas Industriales</h4>
+      <p>Alta adherencia y durabilidad.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+
+    <div class="producto">
+      <img src="img/solvente.jpg">
+      <h4>Solventes</h4>
+      <p>Limpieza y rendimiento óptimo.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+
+    <div class="producto">
+      <img src="img/cartucho.jpg">
+      <h4>Cartuchos</h4>
+      <p>Compatibles con múltiples sistemas.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+  </div>
 </section>
 
-<!-- EQUIPOS Y REFACCIONES-->
+<!-- EQUIPOS -->
 <section id="equipos" class="page pagina">
-  <img src="img/equipos.jpg" class="banner">
-  <h2>Equipos</h2>
-  <ul>
-    <li>TIJ</li>
-    <li>CIJ</li>
-    <li>TTO</li>
-    <li>Filtros y bombas</li>
-    <li>Tarjetas electrónicas</li>
-  </ul>
+  <h2>Equipos y Refacciones</h2>
+
+  <div class="grid-productos">
+    <div class="producto">
+      <img src="img/tij.jpg">
+      <h4>TIJ</h4>
+      <p>Impresión térmica precisa.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+
+    <div class="producto">
+      <img src="img/cij.jpg">
+      <h4>CIJ</h4>
+      <p>Alta velocidad industrial.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+
+    <div class="producto">
+      <img src="img/refacciones.jpg">
+      <h4>Refacciones</h4>
+      <p>Filtros, bombas y tarjetas.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+  </div>
 </section>
 
 <!-- SERVICIOS -->
 <section id="servicios" class="page pagina">
-  <img src="img/servicio.jpg" class="banner">
   <h2>Servicios</h2>
-  <ul>
-    <li>Mantenimiento</li>
-    <li>Diagnóstico</li>
-    <li>Instalación</li>
-  </ul>
+
+  <div class="grid-productos">
+    <div class="producto">
+      <img src="img/mantenimiento.jpg">
+      <h4>Mantenimiento</h4>
+      <p>Prevención de fallas.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+
+    <div class="producto">
+      <img src="img/diagnostico.jpg">
+      <h4>Diagnóstico</h4>
+      <p>Detección rápida.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+
+    <div class="producto">
+      <img src="img/instalacion.jpg">
+      <h4>Instalación</h4>
+      <p>Puesta en marcha.</p>
+      <span class="nota">Imagen IA / referencia</span>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-
   <h2>CONTÁCTANOS</h2>
 
   <div class="footer-grid">
-
     <div class="mapa">
       <iframe src="https://www.google.com/maps?q=Hidalgo,Mexico&output=embed"></iframe>
       <p>Hidalgo, México</p>
-      <p>Horario: 9:00 am - 6:00 pm</p>
     </div>
 
     <div class="footer-info">
-
-      <div class="contact-item">
-        <span>comercializadoranordmex@hotmail.com</span>
-      </div>
-
-      <div class="contact-item">
-        <span> 5569804523</span>
-      </div>
-
-      <div class="redes">
-        <a href="https://www.youtube.com/@adhetinser8768" target="_blank">YouTube</a>
-        <a href="https://www.facebook.com/share/18DdE4ByMZ/" target="_blank">Facebook</a>
-      </div>
-
+      <p>comercializadoranordmex@hotmail.com</p>
+      <p>5569804523</p>
     </div>
-
   </div>
 
   <p class="copy">HIDALGO MÉXICO | 2026</p>
-
 </footer>
 
 <script src="script.js"></script>
