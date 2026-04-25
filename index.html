@@ -1,9 +1,16 @@
-<!-- ================= HEADER ================= -->
-<header class="header">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ADHETINSER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <!-- LOGO (IMAGEN) -->
+<body>
+
+<header class="header">
   <div class="logo">
-    <img src="img/logo.png" alt="ADHETINSER" class="logo-img">
+    <img src="img/logo.png" alt="ADHETINSER">
   </div>
 
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -17,138 +24,99 @@
       <li><a onclick="showPage('servicios')">Servicios</a></li>
     </ul>
   </nav>
-
 </header>
 
-<!-- ================= INICIO ================= -->
+<!-- INICIO -->
 <section id="inicio" class="page active hero">
-
   <h1>Consumibles y soporte técnico</h1>
   <p>Mantén tu producción sin interrupciones</p>
 
-  <!-- TARJETAS -->
   <div class="categorias">
-
     <div class="card" onclick="showPage('consumibles')">
-      <img src="https://img.icons8.com/ios-filled/50/gear.png" class="icon-card">
       <h3>Consumibles</h3>
       <p>Evita paros por falta de insumos</p>
     </div>
 
     <div class="card" onclick="showPage('equipos')">
-      <img src="https://img.icons8.com/ios-filled/50/factory.png" class="icon-card">
       <h3>Equipos y Refacciones</h3>
       <p>Mayor vida útil para tus equipos</p>
     </div>
 
     <div class="card" onclick="showPage('servicios')">
-      <img src="https://img.icons8.com/ios-filled/50/maintenance.png" class="icon-card">
       <h3>Servicios</h3>
       <p>Reduce fallas y mejora rendimiento</p>
     </div>
-
   </div>
 
-  <!-- NOSOTROS (SIMPLIFICADO) -->
-  <section class="nosotros">
+  <div class="nosotros">
     <h3>Nosotros</h3>
     <p>
       Mantenemos tu producción en marcha con consumibles, refacciones y soporte técnico confiable.
     </p>
-  </section>
-
+  </div>
 </section>
 
-<!-- ================= CONSUMIBLES ================= -->
+<!-- CONSUMIBLES -->
 <section id="consumibles" class="page pagina">
-
   <img src="img/consumibles.jpg" class="banner">
-
   <h2>Consumibles</h2>
-  <p>Materiales confiables para operación continua.</p>
-
   <ul>
     <li>Tintas</li>
     <li>Solventes</li>
     <li>Cartuchos</li>
   </ul>
-
 </section>
 
-<!-- ================= EQUIPOS ================= -->
+<!-- EQUIPOS Y REFACCIONES-->
 <section id="equipos" class="page pagina">
-
   <img src="img/equipos.jpg" class="banner">
-
-  <h2>Equipos y Refacciones</h2>
-  <p>Soluciones adaptadas a tu proceso.</p>
-
+  <h2>Equipos</h2>
   <ul>
     <li>TIJ</li>
     <li>CIJ</li>
     <li>TTO</li>
+    <li>Filtros y bombas</li>
     <li>Tarjetas electrónicas</li>
-    <li>Filtros</li>
   </ul>
-
 </section>
 
-<!-- ================= SERVICIOS ================= -->
+<!-- SERVICIOS -->
 <section id="servicios" class="page pagina">
-
   <img src="img/servicio.jpg" class="banner">
-
   <h2>Servicios</h2>
-  <p>Prevención y solución de fallas.</p>
-
   <ul>
     <li>Mantenimiento</li>
     <li>Diagnóstico</li>
     <li>Instalación</li>
   </ul>
-
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 <footer class="footer">
 
-  <h2>CONTACTANOS</h2>
+  <h2>CONTÁCTANOS</h2>
 
   <div class="footer-grid">
 
-    <!-- MAPA -->
     <div class="mapa">
-      <iframe 
-        src="https://www.google.com/maps?q=Hidalgo,Mexico&output=embed">
-      </iframe>
+      <iframe src="https://www.google.com/maps?q=Hidalgo,Mexico&output=embed"></iframe>
       <p>Hidalgo, México</p>
       <p>Horario: 9:00 am - 6:00 pm</p>
     </div>
 
-    <!-- CONTACTO -->
-    <div class="info">
+    <div class="footer-info">
 
       <div class="contact-item">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" class="icon">
         <span>comercializadoranordmex@hotmail.com</span>
       </div>
 
       <div class="contact-item">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" class="icon">
-        <span>5569804523</span>
+        <span> 5569804523</span>
       </div>
 
-      <!-- REDES SOLO ICONOS -->
       <div class="redes">
-
-        <a href="https://www.youtube.com/@adhetinser8768" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" class="icon">
-        </a>
-
-        <a href="https://www.facebook.com/share/18DdE4ByMZ/" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" class="icon">
-        </a>
-
+        <a href="https://www.youtube.com/@adhetinser8768" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/share/18DdE4ByMZ/" target="_blank">Facebook</a>
       </div>
 
     </div>
@@ -158,3 +126,8 @@
   <p class="copy">HIDALGO MÉXICO | 2026</p>
 
 </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
