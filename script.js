@@ -1,20 +1,28 @@
+// ABRIR / CERRAR MENU
 function toggleMenu() {
   document.getElementById("menu").classList.toggle("active");
 }
 
+// CAMBIAR DE SECCIÓN
 function showPage(pageId) {
 
   // Oculta todas las páginas
-  document.querySelectorAll(".page").forEach(page => {
-    page.classList.remove("active");
+  document.querySelectorAll(".page").forEach(section => {
+    section.classList.remove("active");
   });
 
-  // Muestra la seleccionada
-  document.getElementById(pageId).classList.add("active");
+  // Muestra la sección seleccionada
+  const selected = document.getElementById(pageId);
+  if (selected) {
+    selected.classList.add("active");
+  }
 
-  // Cierra el menú
+  // Cierra el menú al seleccionar
   document.getElementById("menu").classList.remove("active");
 
-  // Scroll arriba
-  window.scrollTo(0, 0);
+  // Subir al inicio
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
