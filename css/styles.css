@@ -1,15 +1,13 @@
 /* ================= VARIABLES ================= */
 :root {
-  --primary: #d4bd3d;   /* dorado principal */
-  --secondary: #ddca1c; /* dorado fuerte */
-  --light: #f0efe3;     /* fondo claro */
-  --dark: #101010;      /* negro real */
-  --gray: #6c6c6a;      /* gris medio */
-  --soft-gray: #77796a; /* gris suave */
-  --accent: #bfb887;    /* tono intermedio */
-  --white: #ffffff;
-  --text: #101010;
-  --light-bg: #f0efe3;
+  --primary: #ddca1c;      /* amarillo principal fuerte */
+  --primary-soft: #d4bd3d; /* amarillo secundario */
+  --dark: #101010;         /* negro real de tu marca */
+  --white: #f0efe3;        /* blanco cálido */
+  --text: #101010;         /* texto principal */
+  --gray: #6c6c6a;         /* gris medio */
+  --light-bg: #f0efe3;     /* fondo claro */
+  --border: #bfb887;       /* borde suave */
 }
 
 /* ================= RESET ================= */
@@ -38,7 +36,7 @@ body{
   background:var(--dark);
   color:var(--white);
   z-index:1000;
-  border-bottom:1px solid var(--gray);
+  border-bottom:2px solid var(--primary);
 }
 
 /* LOGO */
@@ -52,7 +50,7 @@ body{
 .logo p{
   margin:0;
   font-size:12px;
-  color:var(--accent);
+  color:var(--white);
 }
 
 /* MENU */
@@ -77,7 +75,7 @@ body{
 }
 
 .menu ul li{
-  border-bottom:1px solid var(--gray);
+  border-bottom:1px solid #333;
 }
 
 .menu ul li a{
@@ -88,7 +86,8 @@ body{
 }
 
 .menu ul li a:hover{
-  background:var(--gray);
+  background:var(--primary);
+  color:var(--dark);
 }
 
 /* BOTON MENU */
@@ -100,7 +99,7 @@ body{
 
 /* ================= HERO ================= */
 .hero{
-  background:var(--dark);
+  background:linear-gradient(135deg, #101010 40%, #ddca1c 100%);
   color:var(--white);
   text-align:center;
   padding:80px 20px;
@@ -109,11 +108,10 @@ body{
 .hero h1{
   font-size:34px;
   margin-bottom:10px;
-  color:var(--primary);
 }
 
 .hero p{
-  color:var(--accent);
+  color:#f0efe3;
 }
 
 /* ================= BOTONES ================= */
@@ -129,7 +127,7 @@ button{
 }
 
 button:hover{
-  background:var(--secondary);
+  background:var(--primary-soft);
 }
 
 /* ================= TARJETAS ================= */
@@ -148,7 +146,7 @@ button:hover{
   border-radius:8px;
   text-align:center;
   cursor:pointer;
-  border:1px solid var(--accent);
+  border:1px solid var(--border);
   transition:0.3s;
 }
 
@@ -240,6 +238,7 @@ ul li{
   text-align:center;
   padding:40px 20px;
   margin-top:40px;
+  border-top:2px solid var(--primary);
 }
 
 .footer h2{
@@ -254,7 +253,7 @@ ul li{
 .copy{
   margin-top:20px;
   font-size:12px;
-  color:var(--soft-gray);
+  color:#bfb887;
 }
 
 /* ================= ICONOS ================= */
@@ -281,6 +280,10 @@ ul li{
   gap:8px;
   color:var(--primary);
   text-decoration:none;
+}
+
+.redes a:hover{
+  color:var(--primary-soft);
 }
 
 /* ================= WHATSAPP ================= */
